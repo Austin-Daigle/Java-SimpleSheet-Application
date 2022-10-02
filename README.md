@@ -1,5 +1,5 @@
 # Java SimpleSheet Application
-This is a simple java program that analyzes income/expenditure statements.
+This is a simple java program that analyzes income/expenditure statements. This program was written in 2018.
 
 # Demonstration Video:
 [Class Demonstration/Explanation Video](https://youtu.be/YisBk7Npusw)
