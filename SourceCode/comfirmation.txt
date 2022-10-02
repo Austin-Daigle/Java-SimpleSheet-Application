@@ -1,0 +1,61 @@
+import javax.swing.JOptionPane;
+
+public class comfirmation {
+	public static void verifyShutdown()
+	{
+		Object[] ShutdownOptions = {"Return to Menu","Close Program"};
+		int shutdownOptionsChoice = JOptionPane.showOptionDialog(null,"Are you sure that you want to "
+				+ "close the program?\nAll your progress will be lost!","Shutdown?",
+				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null,ShutdownOptions,ShutdownOptions[1]);
+		
+		if(shutdownOptionsChoice == 1)
+		{
+		System.exit(0);
+		}
+	}
+	public static boolean verifyEntryReplacement()
+	{
+		int replacementConfirmation = -1;
+		boolean replacementResult = false;
+		replacementConfirmation = JOptionPane.showConfirmDialog(
+			    null,
+			    "Would you like to replace your values for the new entries?",
+			    "Edit Comfirmation",
+			    JOptionPane.YES_NO_OPTION);
+		
+		if(replacementConfirmation == 0)
+		{
+		replacementResult = true;	
+		}
+		if(replacementConfirmation == 1)
+		{
+		replacementResult = false;	
+		}
+		return replacementResult;
+	}
+	
+	public static boolean verifyEntryDeletion()
+	{
+		int deletionComfirmation = -1; 
+		boolean deletionResult = false;
+		
+		deletionComfirmation = JOptionPane.showConfirmDialog(
+			    null,
+			    "Are you sure you want to delete this entry?",
+			    "Delete Comfirmation",
+			    JOptionPane.YES_NO_OPTION);
+		
+		if(deletionComfirmation  == 0)
+		{
+		deletionResult = true;	
+		}
+		if(deletionComfirmation  == 1)
+		{
+		deletionResult = false;	
+		}
+		return deletionResult;
+		}
+	
+	
+	
+}

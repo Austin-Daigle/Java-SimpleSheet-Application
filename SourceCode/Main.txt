@@ -1,0 +1,95 @@
+//JAVA SIMPLESHEET VERSION 1.0 (Demonstration Build Edition)
+//Written by Austin A. Daigle
+//2-5-2018
+//AP Computer Science
+
+
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+public class Main {
+	
+	public static ArrayList<String> balances = new ArrayList<String>();
+	public static ArrayList<String> typeOfBalance = new ArrayList<String>();
+	public static ArrayList<String> memos = new ArrayList<String>();
+	public static ArrayList<String> editorSelector = new ArrayList<String>();	
+	
+	public static void main(String args[])
+	{
+		classDemoMode();
+
+		while(true) //primary program loop
+		{
+		generateUserOptions();
+		}
+		
+	}
+
+	public static void generateUserOptions()
+	{
+		Object[] options = {"Show Analytics","Edit an Entry","Create an Entry","Quit Program"};
+		
+		int functionChoice = JOptionPane.showOptionDialog(null,"Select a function.","SimpleSheet Functions Main Menu",
+				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null,options,options[2]);
+		
+		switch(functionChoice)
+		{
+		
+		
+		case 0: //Show Analytics
+		{
+	
+			analytics.analyze();
+
+		}
+		break;
+		
+		
+		case 1: //Edit An entry
+		{
+			if(!(balances.size()<=0))
+			{
+			editBalanceSheet.editMenu();	
+			}
+			else
+			{
+			editBalanceSheet.emptyBalanceSheetError();	
+			}
+	
+		}
+		break;
+		
+		
+		case 2: //Create an entry 
+		{
+			balanceSheet.addBalanceType();
+		}
+		break;
+	
+		case 3: //Quit Program
+		{
+			comfirmation.verifyShutdown();
+		}
+		break;
+		
+		
+		}
+		
+	}
+		
+	public static void classDemoMode() 
+	{
+		//PRE-POPULATED DATA FOR DEMONSTRATIONS (REMOVE FOR FINAL EDIT)
+		balances.add("1500"); 	typeOfBalance.add("Income");		memos.add("Job");
+		balances.add("800");	typeOfBalance.add("Expenditure");	memos.add("Rent");
+		balances.add("85");		typeOfBalance.add("Expenditure");	memos.add("water bill");
+		balances.add("70"); 	typeOfBalance.add("Expenditure");	memos.add("power bill");
+		balances.add("250");	typeOfBalance.add("Expenditure");	memos.add("groceries");
+		balances.add("50");		typeOfBalance.add("Expenditure");	memos.add("phone bill");
+		balances.add("250"); 	typeOfBalance.add("Expenditure");	memos.add("Car note");
+		balances.add("150");	typeOfBalance.add("Expenditure");	memos.add("car insurance");
+		balances.add("50");		typeOfBalance.add("Expenditure");	memos.add("Internet + Cable");
+		balances.add("1500"); 	typeOfBalance.add("Income");		memos.add("Job");
+	}	
+}

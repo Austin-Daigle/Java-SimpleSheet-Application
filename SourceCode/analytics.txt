@@ -1,0 +1,107 @@
+import java.awt.Dimension;
+
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class analytics {
+	static Main main = new Main();
+	
+	public static double totalIncome = 0.0;
+	public static double totatExpenditures = 0.0;
+	public static double totalBalanceAfterExpences = 0.0;
+	
+	public static double averageIncome = 0.0;
+	public static double averageExpenditure = 0.0;
+	public static double totalForAllBalances = 0.0;
+	
+	public static int numberOfEntries = 0;
+	public static int numberOfIncomeEntries = 0;
+	public static int numberOfExpenditureEntries = 0;
+	
+	
+	public static String analyticalPrintOut = "";
+	
+	public static void clearVariables()
+	{
+		totalIncome = 0.0;
+		totatExpenditures = 0.0;
+		numberOfEntries = 0;
+		totalBalanceAfterExpences = 0.0;
+		averageIncome = 0.0;
+		averageExpenditure = 0.0;
+		totalForAllBalances = 0.0;	
+		numberOfEntries = 0;
+		numberOfIncomeEntries = 0;
+		numberOfExpenditureEntries = 0;
+		analyticalPrintOut = "";
+	}
+	
+	
+	public static void analyze()
+	{
+		clearVariables();
+		
+		numberOfEntries = Main.balances.size();
+		
+		for(int i = 0; i < numberOfEntries; i++)
+		{
+			
+			if(Main.typeOfBalance.get(i).equals("Income")) //tally all instances of income
+			{
+			numberOfIncomeEntries++;
+			totalIncome = totalIncome + Double.parseDouble(Main.balances.get(i));	
+			}
+			if(Main.typeOfBalance.get(i).equals("Expenditure")) //tally all instances of expense
+			{
+			numberOfExpenditureEntries++;	
+			totatExpenditures = totatExpenditures + Double.parseDouble(Main.balances.get(i)); 	
+			}	
+			totalForAllBalances = totalForAllBalances + Double.parseDouble(Main.balances.get(i)); //tally up all entries
+		}
+		
+		averageIncome =  (totalIncome/numberOfIncomeEntries);
+		averageExpenditure = (totatExpenditures/numberOfExpenditureEntries);
+		totalBalanceAfterExpences = totalIncome-totatExpenditures;
+
+		analyticalPrintOut = analyticalPrintOut + "======================================\n";
+		analyticalPrintOut = analyticalPrintOut + "ANALYTICAL OVERVIEW:\n";
+		analyticalPrintOut = analyticalPrintOut + "Total Income: $"+totalIncome+"\n";
+		analyticalPrintOut = analyticalPrintOut + "Average Income: $"+averageIncome+"\n";
+		analyticalPrintOut = analyticalPrintOut + "Total Expenditures: $"+totatExpenditures+"\n";
+		analyticalPrintOut = analyticalPrintOut + "Average Expenditure: $"+averageExpenditure+"\n";		
+		analyticalPrintOut = analyticalPrintOut + "Total after all Expenditures: $"+totalBalanceAfterExpences+"\n";
+		analyticalPrintOut = analyticalPrintOut + "\n";
+		if(totalBalanceAfterExpences<0)
+		{
+		analyticalPrintOut = analyticalPrintOut	+ "Financial Status: You're in debt.\n";
+		}
+		if(totalBalanceAfterExpences>0)
+		{
+		analyticalPrintOut = analyticalPrintOut	+ "Financial Status: You're making a profit.\n";	
+		}
+		if(totalBalanceAfterExpences==0)
+		{
+		analyticalPrintOut = analyticalPrintOut	+ "Financial Status: You're breaking even.\n";	
+		}
+		
+		analyticalPrintOut = analyticalPrintOut + "\n";
+		analyticalPrintOut = analyticalPrintOut + "********Balance Sheet*****************\n";
+		for(int i = 0; i < Main.balances.size(); i++)
+		{
+			analyticalPrintOut = analyticalPrintOut + "#"+(i+1)+" $"+Main.balances.get(i)+" - "+Main.typeOfBalance.get(i)
+			+" - Memo: "+Main.memos.get(i)+"\n";
+		}
+		analyticalPrintOut = analyticalPrintOut + "*****************************************\n";
+		analyticalPrintOut = analyticalPrintOut + "\n";
+		analyticalPrintOut = analyticalPrintOut + "======================================\n";
+		
+		JTextArea tutorialTextArea = new JTextArea(analyticalPrintOut);
+		JScrollPane scrollPane = new JScrollPane(tutorialTextArea);  
+		tutorialTextArea.setLineWrap(true);  
+		tutorialTextArea.setWrapStyleWord(true); 
+		scrollPane.setPreferredSize(new Dimension(290, 250));
+		JOptionPane.showMessageDialog(null, scrollPane, "Analysis Overview",JOptionPane.INFORMATION_MESSAGE, null);	
+		
+	}	
+}

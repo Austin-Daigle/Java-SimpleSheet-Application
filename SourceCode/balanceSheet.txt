@@ -1,0 +1,79 @@
+import javax.swing.JOptionPane;
+
+public class balanceSheet {
+	static Main main = new Main();
+	
+	public static void addBalanceType()
+	{
+		Object[] balanceTypeOptions = {"Income","Expenditure"};
+		
+		int balanceTypeInput = JOptionPane.showOptionDialog(null,"Please choose the type of balance entry this is.","Select this balance entry type",
+				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null,balanceTypeOptions,balanceTypeOptions[1]);
+		
+		
+		if(balanceTypeInput == -1)
+		{
+			//JOptionPane.showMessageDialog(null,"Please enter the balance category for this entry"
+			//		,"Error: No Input Found", JOptionPane.ERROR_MESSAGE);
+			//addBalanceType();
+		}
+		else
+		{
+			if(balanceTypeInput == 0)
+			{
+			Main.typeOfBalance.add("Income");
+			}
+			if(balanceTypeInput == 1)
+			{
+			Main.typeOfBalance.add("Expenditure");
+			}
+			addEntry();
+		}
+		
+		
+	}
+	
+	public static void addEntry()
+	{
+		String dollarAmountInput = "";
+		if(Main.typeOfBalance.get(Main.typeOfBalance.size()-1).equals("Income"))
+		{
+			dollarAmountInput = JOptionPane.showInputDialog(null, "please enter an amount for this income.\n"
+					+ "[Clicking on cancel will close the program.]");	
+		}
+		if(Main.typeOfBalance.get(Main.typeOfBalance.size()-1).equals("Expenditure"))
+		{
+			dollarAmountInput = JOptionPane.showInputDialog(null, "please enter an amount for this expenditure.\n"
+					+ "[Clicking on cancel will close the program.]");	
+		}
+
+		try //checks if the string can be tested as a double
+		{
+			Double.parseDouble(dollarAmountInput);
+			if(dollarAmountInput.startsWith("-")) //remove negatives from entry
+			{
+				dollarAmountInput = dollarAmountInput.substring(1, dollarAmountInput.length()-1);
+			}
+			Main.balances.add(dollarAmountInput);
+			
+			addMemo();
+
+		}
+		catch(NumberFormatException e)
+		{
+
+			JOptionPane.showMessageDialog(null, "\""+dollarAmountInput+"\" is not a valid input. Please input a valid number for an input.", "Input Error!",JOptionPane.ERROR_MESSAGE);
+		}  
+	}
+	
+	public static void addMemo()
+	{
+		String userInputMemo = JOptionPane.showInputDialog(null, "Add a memo to this transation. Leaving this "
+				+ "dialog box blank will result in an absence of a note.");	
+		Main.memos.add(userInputMemo);
+	}
+	
+	
+
+
+}
