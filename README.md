@@ -4,9 +4,12 @@ This is a simple java program that analyzes income/expenditure statements.
 # How to use:
 Download the attached executable .jar application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the source code and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
 
+# Demonstration Video:
+[Class Demonstration/Explanation Video](https://youtu.be/YisBk7Npusw)
+
 ## There are four options supported by the program:
   * create an entry
-  * delete an entry
+  * edit an entry
   * show analytics
   * quit program
   
