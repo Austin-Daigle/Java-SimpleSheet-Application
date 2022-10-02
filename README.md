@@ -1,21 +1,22 @@
 # Java SimpleSheet Application
 This is a simple java program that analyzes income/expenditure statements.
 
-# How to use:
-Download the attached executable .jar application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the source code and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
-
 # Demonstration Video:
 [Class Demonstration/Explanation Video](https://youtu.be/YisBk7Npusw)
 
+# How to use:
+Download the attached executable .jar application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the source code and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
+
+
 ## There are four options supported by the program:
   * create an entry
-  * edit an entry
+  * edit an entry (edit or delete)
   * show analytics
   * quit program
   
 
-## Create an entry: 
-  select "Create an entry" from the program GUI
+## Create an Entry: 
+  select "Create an entry" from the program main menu GUI to get to the "create an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193438730-2d65e629-249f-421c-ae45-da47e96a0701.png)
 
@@ -29,3 +30,32 @@ or "expendature"
 
 for either case enter a memo (blank entries are valid, and the memo will be left blank in the analytics/edit portions of the program.
 ![image](https://user-images.githubusercontent.com/100094056/193438755-78e893c0-6672-4037-9435-59539151c8bb.png)
+
+## Edit an Entry
+Select "Edit an entry" from the program main menu GUI
+![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
+
+Select an entry from the dropdown menu and select okay 
+
+![image](https://user-images.githubusercontent.com/100094056/193439144-0d43ce19-9477-47ff-a89c-e90e554c6841.png)
+ 
+Select if the entry being modified will either classified as an expendature or as income
+
+![image](https://user-images.githubusercontent.com/100094056/193439247-a3100001-f50f-4fd1-a8ef-af03b2bb51c4.png)
+
+Update the prior value with a new value
+
+![image](https://user-images.githubusercontent.com/100094056/193439258-f89cb91c-f583-4612-98fc-a8d548b40184.png)
+
+update the memo (optinal)
+
+![image](https://user-images.githubusercontent.com/100094056/193439277-49c8699a-6bea-483b-b0db-212d629377e1.png)
+
+comfirm your edit
+
+![image](https://user-images.githubusercontent.com/100094056/193439307-9881fec6-06e5-45ee-a779-0a457acb6c92.png)
+
+
+## Delete an Entry
+
+
