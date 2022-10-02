@@ -11,8 +11,8 @@ Download the attached [executable .jar](https://github.com/Austin-Daigle/Java-Si
 ## There are four options supported by the program:
 * [create an entry](#create)
 * edit an entry
-* [modify an entry](#edit)
-* [delete an entry](#delete)
+   * [modify an entry](#edit)
+   * [delete an entry](#delete)
 * [show analytics](#analysis)
 * [quit program](#quit)
 
