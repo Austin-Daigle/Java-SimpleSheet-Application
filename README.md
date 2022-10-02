@@ -9,7 +9,7 @@ Download the attached executable .jar application and execute and the java-based
 
 
 ## There are four options supported by the program:
-  * [create an entry](createAnEntry#)
+  * [create an entry](createAnEntry##)
   * edit an entry (edit or delete)
   * show analytics
   * quit program
