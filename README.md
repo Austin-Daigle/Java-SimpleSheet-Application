@@ -33,6 +33,7 @@ for either case enter a memo (blank entries are valid, and the memo will be left
 
 ## Edit an Entry
 Select "Edit an entry" from the program main menu GUI
+
 ![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
 
 Select an entry from the dropdown menu and select okay 
