@@ -29,10 +29,11 @@ or "expendature"
 ![image](https://user-images.githubusercontent.com/100094056/193438769-e15bbcaf-183f-48a6-a593-868154746b26.png)
 
 for either case enter a memo (blank entries are valid, and the memo will be left blank in the analytics/edit portions of the program.
+
 ![image](https://user-images.githubusercontent.com/100094056/193438755-78e893c0-6672-4037-9435-59539151c8bb.png)
 
 ## Edit an Entry
-Select "Edit an entry" from the program main menu GUI
+Select "Edit an entry" from the program main menu GUI to get to the "edit/delete an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
 
@@ -52,11 +53,33 @@ update the memo (optinal)
 
 ![image](https://user-images.githubusercontent.com/100094056/193439277-49c8699a-6bea-483b-b0db-212d629377e1.png)
 
-comfirm your edit
+comfirm your edit and the entry will be updated
 
 ![image](https://user-images.githubusercontent.com/100094056/193439307-9881fec6-06e5-45ee-a779-0a457acb6c92.png)
 
+![image](https://user-images.githubusercontent.com/100094056/193439385-48028034-82c2-49e1-b177-88c8c7048a24.png)
+
 
 ## Delete an Entry
+Select "Edit an entry" from the program main menu GUI
 
+![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
+
+Select an entry from the dropdown list to delete
+
+![image](https://user-images.githubusercontent.com/100094056/193439432-f6c84b5e-8cbf-49f5-92d5-ceb6222016fb.png)
+
+Comfirm the deletion
+
+![image](https://user-images.githubusercontent.com/100094056/193439449-9fe4148d-bf9f-4c52-b4df-1e85f179861f.png)
+
+upon comfirmation, that entry has been deleted.
+
+## Show Analytics
+Select "show analytics"
+a prompt page will appear and show the analytics based on the data from the entries.
+
+![image](https://user-images.githubusercontent.com/100094056/193439521-fedf59d7-461f-4744-8e70-86b406c50a61.png)
+
+![image](https://user-images.githubusercontent.com/100094056/193439524-a71f7c97-56c3-4aa2-afa8-f847c6fcabc9.png)
 
