@@ -5,28 +5,27 @@ This is a simple java program that analyzes income/expenditure statements.
 [Class Demonstration/Explanation Video](https://youtu.be/YisBk7Npusw)
 
 # How to use:
-Download the attached [executable .jar](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/blob/main/SimpleSheet%20(Standard%20Version).jar) application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the [source code](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/tree/main/SourceCode) and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
+Download the attached [executable .jar](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/blob/main/SimpleSheet%20(Standard%20Version).jar) application and execute and the java-based GUI will start up. Alternately, the program can also be run by downloading the [source code](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/tree/main/SourceCode) and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
 
 
 ## There are four options supported by the program:
-  * [create an entry](#create)
-  * edit an entry
-    * [modify an entry](#edit)
-    * [delete an entry](#delete)
-  * [show analytics](#analysis)
-  * [quit program](#quit)
-  
+* [create an entry](#create)
+* edit an entry
+* [modify an entry](#edit)
+* [delete an entry](#delete)
+* [show analytics](#analysis)
+* [quit program](#quit)
 
-## <a id="create"></a> Create an Entry: 
-  select "Create an entry" from the program main menu GUI to get to the "create an entry" prompt
+## <a id="create"></a> Create an Entry:
+select "Create an entry" from the program main menu GUI to get to the "create an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193438730-2d65e629-249f-421c-ae45-da47e96a0701.png)
 
-  select either "income"
+select either "income"
 
 ![image](https://user-images.githubusercontent.com/100094056/193438750-c09046c8-eed7-453c-9a16-9df2de0f09f2.png)
 
-or "expendature"
+or "expenditure"
 
 ![image](https://user-images.githubusercontent.com/100094056/193438769-e15bbcaf-183f-48a6-a593-868154746b26.png)
 
@@ -39,11 +38,11 @@ Select "Edit an entry" from the program main menu GUI to get to the "edit/delete
 
 ![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
 
-Select an entry from the dropdown menu and select okay 
+Select an entry from the dropdown menu and select okay
 
 ![image](https://user-images.githubusercontent.com/100094056/193439144-0d43ce19-9477-47ff-a89c-e90e554c6841.png)
- 
-Select if the entry being modified will either classified as an expendature or as income
+
+Select if the entry being modified will either be classified as an expenditure or as income
 
 ![image](https://user-images.githubusercontent.com/100094056/193439247-a3100001-f50f-4fd1-a8ef-af03b2bb51c4.png)
 
@@ -51,11 +50,11 @@ Update the prior value with a new value
 
 ![image](https://user-images.githubusercontent.com/100094056/193439258-f89cb91c-f583-4612-98fc-a8d548b40184.png)
 
-update the memo (optinal)
+update the memo (optional)
 
 ![image](https://user-images.githubusercontent.com/100094056/193439277-49c8699a-6bea-483b-b0db-212d629377e1.png)
 
-comfirm your edit and the entry will be updated
+confirm your edit and the entry will be updated
 
 ![image](https://user-images.githubusercontent.com/100094056/193439307-9881fec6-06e5-45ee-a779-0a457acb6c92.png)
 
@@ -71,13 +70,13 @@ Select an entry from the dropdown list to delete
 
 ![image](https://user-images.githubusercontent.com/100094056/193439432-f6c84b5e-8cbf-49f5-92d5-ceb6222016fb.png)
 
-Comfirm the deletion
+Confirm the deletion
 
 ![image](https://user-images.githubusercontent.com/100094056/193439449-9fe4148d-bf9f-4c52-b4df-1e85f179861f.png)
 
-upon comfirmation, that entry has been deleted.
+upon confirmation, that entry has been deleted.
 
-##  <a id="analysis"></a>Show Analytics
+## <a id="analysis"></a>Show Analytics
 Select "show analytics"
 a prompt page will appear and show the analytics based on the data from the entries.
 
