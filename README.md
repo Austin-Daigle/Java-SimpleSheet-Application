@@ -9,13 +9,13 @@ Download the attached executable .jar application and execute and the java-based
 
 
 ## There are four options supported by the program:
-  * create an entry
+  * [create an entry](createAnEntry#)
   * edit an entry (edit or delete)
   * show analytics
   * quit program
   
 
-## Create an Entry: 
+## [Create an Entry:](createAnEntry) 
   select "Create an entry" from the program main menu GUI to get to the "create an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193438730-2d65e629-249f-421c-ae45-da47e96a0701.png)
