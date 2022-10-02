@@ -5,7 +5,7 @@ This is a simple java program that analyzes income/expenditure statements.
 [Class Demonstration/Explanation Video](https://youtu.be/YisBk7Npusw)
 
 # How to use:
-Download the attached executable .jar application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the source code and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
+Download the attached [executable .jar](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/blob/main/SimpleSheet%20(Standard%20Version).jar) application and execute and the java-based GUI will start-up. Alternately, the program can also be run by downloading the [source code](https://github.com/Austin-Daigle/Java-SimpleSheet-Application/tree/main/SourceCode) and compiling/executing each java class via a command line/IDE or the classes for the source code can be introduced into the Eclipse IDE and exported as a .jar executable.
 
 
 ## There are four options supported by the program:
