@@ -9,13 +9,15 @@ Download the attached executable .jar application and execute and the java-based
 
 
 ## There are four options supported by the program:
-  * [create an entry](createAnEntry##)
-  * edit an entry (edit or delete)
-  * show analytics
-  * quit program
+  * [create an entry](#create)
+  * edit an entry
+    * [modify an entry](#edit)
+    * [delete an entry](#delete)
+  * [show analytics](#analysis)
+  * [quit program](#quit)
   
 
-## [Create an Entry:](createAnEntry) 
+## <a id="create"></a> Create an Entry: 
   select "Create an entry" from the program main menu GUI to get to the "create an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193438730-2d65e629-249f-421c-ae45-da47e96a0701.png)
@@ -32,7 +34,7 @@ for either case enter a memo (blank entries are valid, and the memo will be left
 
 ![image](https://user-images.githubusercontent.com/100094056/193438755-78e893c0-6672-4037-9435-59539151c8bb.png)
 
-## Edit an Entry
+## <a id="edit"></a> Edit an Entry
 Select "Edit an entry" from the program main menu GUI to get to the "edit/delete an entry" prompt
 
 ![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
@@ -60,7 +62,7 @@ comfirm your edit and the entry will be updated
 ![image](https://user-images.githubusercontent.com/100094056/193439385-48028034-82c2-49e1-b177-88c8c7048a24.png)
 
 
-## Delete an Entry
+## <a id="delete"></a> Delete an Entry
 Select "Edit an entry" from the program main menu GUI
 
 ![image](https://user-images.githubusercontent.com/100094056/193439034-d2f5aaba-3ccc-43c5-a58c-c55e90fd3dc6.png)
@@ -75,7 +77,7 @@ Comfirm the deletion
 
 upon comfirmation, that entry has been deleted.
 
-## Show Analytics
+##  <a id="analysis"></a>Show Analytics
 Select "show analytics"
 a prompt page will appear and show the analytics based on the data from the entries.
 
@@ -83,3 +85,7 @@ a prompt page will appear and show the analytics based on the data from the entr
 
 ![image](https://user-images.githubusercontent.com/100094056/193439524-a71f7c97-56c3-4aa2-afa8-f847c6fcabc9.png)
 
+## <a id="quit"></a> Quit
+either select to close the program or return to the main menu.
+
+![image](https://user-images.githubusercontent.com/100094056/193439815-7f85e0f3-d4ec-4377-b1f7-558edf8de443.png)
